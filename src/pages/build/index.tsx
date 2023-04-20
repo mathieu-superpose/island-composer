@@ -1,8 +1,7 @@
 import Head from "next/head";
-import styles from "./Home.module.css";
-import Link from "next/link";
+import styles from "./Build.module.css";
 
-export default function Home() {
+export default function Build() {
   return (
     <>
       <Head>
@@ -12,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Island composer</h1>
-        <p>Build you own metaverse island</p>
-        <Link href="/build">Start</Link>
+        <h1>Island composer builder</h1>
       </main>
     </>
   );
