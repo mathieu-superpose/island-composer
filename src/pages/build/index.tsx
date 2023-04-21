@@ -1,4 +1,9 @@
 import Head from "next/head";
+
+import { Canvas } from "@react-three/fiber";
+
+import Builder from "@/builder";
+
 import styles from "./Build.module.css";
 
 export default function Build() {
@@ -11,7 +16,9 @@ export default function Build() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Island composer builder</h1>
+        <Canvas>
+          <Builder />
+        </Canvas>
       </main>
     </>
   );
