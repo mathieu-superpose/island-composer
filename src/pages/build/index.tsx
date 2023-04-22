@@ -16,7 +16,14 @@ export default function Build() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Canvas>
+        <Canvas
+          camera={{
+            position: [50, 70, -50],
+            fov: 45,
+            near: 0.1,
+            far: 1000,
+          }}
+        >
           <Builder />
         </Canvas>
       </main>
